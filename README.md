@@ -49,8 +49,6 @@ AI-IDS/
 └── models/        ← Saved model + charts
 ```
 
- 📸 Screenshots
-[Add confusion_matrix.png and dashboard screenshot here]
 
  🎯 My Unique Addition
 Added real-time Scapy packet capture module that feeds live network 
