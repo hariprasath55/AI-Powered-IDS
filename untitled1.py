@@ -51,7 +51,7 @@ def analyze_packet(pkt):
             symbol = '✓'
         else:
             color = RED
-            symbol = '⚠️  ALERT'
+            symbol = '  ALERT'
             alerts.append({
                 'time': timestamp,
                 'src': src_ip,
@@ -71,7 +71,7 @@ def start_capture(interface=None, packet_count=50):
     
     print(f"\n📋 Summary: {len(alerts)} alerts detected")
     for alert in alerts:
-        print(f"  {RED}⚠️  [{alert['time']}] {alert['type']} attack | {alert['src']} → {alert['dst']}{RESET}")
+        print(f"  {RED}  [{alert['time']}] {alert['type']} attack | {alert['src']} → {alert['dst']}{RESET}")
 
 if __name__ == "__main__":
     # Run with: sudo python src/live_detector.py
