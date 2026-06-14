@@ -73,7 +73,7 @@ def preprocess(train, test):
     # Save scaler so we can use it for live predictions later
     os.makedirs('models', exist_ok=True)
     joblib.dump(scaler, 'models/scaler.pkl')
-    print("✅ Preprocessing done!")
+    print(" Preprocessing done!")
     print(f"   Training samples: {X_train.shape[0]}")
     print(f"   Testing samples:  {X_test.shape[0]}")
     return X_train, X_test, y_train, y_test
